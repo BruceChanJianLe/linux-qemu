@@ -18,5 +18,5 @@ qemu-img resize u24.img +30G
 
 Booting with an image:  
 ```bash
-qemu-system-x86_64 -enable-kvm -cdrom /home/chanjl/Downloads/ubuntu-24.04.2-desktop-amd64.iso -boot menu=on -drive file=$HOME/reference/qemu_images/u24.img -m 6G -smp 4 -cpu host -vga virtio -display sdl,gl=on
+qemu-system-x86_64 -enable-kvm -cdrom $HOME/Downloads/ubuntu-24.04.2-desktop-amd64.iso -boot menu=on -drive file=$HOME/reference/qemu_images/u24.img -m 6G -smp 4 -cpu host -vga virtio -display sdl,gl=on
 ```
